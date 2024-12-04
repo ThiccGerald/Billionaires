@@ -1,0 +1,97 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker with Charts</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Budget Tracker</h1>
+
+  <!-- Information Section -->
+  <div class="info-section">
+    <p class="info-text" id="billionaires-info">
+      There are 813 billionaires in the United States who are collectively worth 5.7 trillion dollars. That is 3.8% of all wealth in America.
+    </p>
+    <p class="info-text" id="net-worth-info">
+      The combined net worth of American billionaires has increased by 322% since 2010.
+    </p>
+    <p class="info-text" id="spending-info">
+      In 2023, they made 1.2 trillion dollars. The Netherlands had the 17th largest GDP in the world at 1.1 trillion dollars.
+    </p>
+  </div>
+
+  <!-- Chart Toggle Buttons Section -->
+  <div class="chart-controls">
+    <div class="buttons-wrapper">
+      <button class="collapsible" id="pie-toggle">Toggle Pie Chart</button>
+      <button class="collapsible" id="line-toggle">Toggle Line Graph</button>
+      <button class="collapsible" id="bar-toggle">Toggle Bar Graph</button>
+    </div>
+  </div>
+
+  <!-- Other sections remain unchanged -->
+  <div class="content" id="pie-section">
+    <canvas id="pieChart" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+  </div>
+  <div class="content" id="line-section">
+    <canvas id="lineGraph" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+  </div>
+  <div class="content" id="bar-section">
+    <canvas id="barGraph" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+  </div>
+
+    <!-- Information Text -->
+    <div class="info-section">
+    <p class="info-text" id="spending-info">
+          Here is what US billionaires could spend their money on:
+        </p>
+</div>
+
+    <!-- Collapsible Budget Section -->
+    <div class="buttons-wrapper">
+    <button class="collapsible" id="budget-toggle">Toggle Budget</button>
+</div>
+    <div class="content" id="budget-section" style="display: none;">
+      <div class="slider-section">
+        <div class="slider-item">
+          <div class="slider-label">
+            <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Apple">
+            <span>Feed a person for a year</span>
+          </div>
+          <input type="range" class="item-slider" id="apple-slider" min="0" max="11906428571428" step="1" value="0" data-price="0.0000000042">
+          <div class="slider-info">
+            <span>Selected: <span class="quantity-display">0</span></span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-label">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Bread">
+            <span>Bread - $2.00 each</span>
+          </div>
+          <input type="range" class="item-slider" id="bread-slider" min="0" max="25003" step="1" value="0" data-price="2.0">
+          <div class="slider-info">
+            <span>Selected: <span class="quantity-display">0</span></span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-label">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Milk">
+            <span>Milk - $3.00 each</span>
+          </div>
+          <input type="range" class="item-slider" id="milk-slider" min="0" max="16669" step="1" value="0" data-price="3.0">
+          <div class="slider-info">
+            <span>Selected: <span class="quantity-display">0</span></span>
+          </div>
+        </div>
+      </div>
+      <p class="balance-info">And have <strong id="balance">$50,007.00</strong> left</p>
+      <p class="money-per-person">(<strong id="per-person">$10,001.40</strong>) each</p> 
+    </div>
+  </div>
+  
+    <script src="script.js"></script>
+
+
+</body></html>
