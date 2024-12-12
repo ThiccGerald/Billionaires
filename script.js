@@ -1,5 +1,5 @@
 // Initial values for sliders and balance
-let balance = 50007;
+let balance = 5700000000000;
 const sliders = document.querySelectorAll('.item-slider');
 
 // Calculate initial max values for sliders based on available budget
@@ -26,7 +26,7 @@ const updateBalance = () => {
   document.getElementById('balance').textContent = `$${remainingBalance.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
 
   // Calculate how much each person in a group of 5 would get and format it with commas
-  const perPerson = (remainingBalance / 5).toFixed(2);
+  const perPerson = (remainingBalance / 813).toFixed(2);
   document.getElementById('per-person').textContent = `$${parseFloat(perPerson).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
 };
 
@@ -85,8 +85,20 @@ const pieChart = new Chart(document.getElementById('pieChart').getContext('2d'),
     },
     cutoutPercentage: 50, 
     plugins: {
+      title: {
+        display: true,
+        text: "United States Income Distribution (2024)",
+        font: {
+          size: 18
+        },
+        color: "#ffffff",
+        padding: {
+          top: 10,
+          bottom: 30
+        }
+      },
       legend: {
-        display: false
+        display: false,
       },
       tooltip: {
         enabled: true,
@@ -145,6 +157,18 @@ const lineGraph = new Chart(document.getElementById('lineGraph').getContext('2d'
       easing: 'easeInOutQuad',
     },
     plugins: {
+      title: {
+        display: true,
+        text: "US Billionaires Combined Net Worth (2010-2024)",
+        font: {
+          size: 18
+        },
+        color: "#ffffff",
+        padding: {
+          top: 10,
+          bottom: 30
+        }
+      },
       legend: {
         display: false
       },
@@ -214,6 +238,18 @@ const barChart = new Chart(document.getElementById('barGraph').getContext('2d'),
       easing: 'easeInOutQuad', 
     },
     plugins: {
+      title: {
+        display: true,
+        text: "US Billionaires Income Compares to Countries' GDPs (2023)",
+        font: {
+          size: 18
+        },
+        color: "#ffffff",
+        padding: {
+          top: 10,
+          bottom: 30
+        }
+      },
       legend: {
         display: false
       },
