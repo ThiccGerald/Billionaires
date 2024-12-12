@@ -3,11 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Budget Tracker with Charts</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 <div class="container">
-  <h1>Budget Tracker</h1>
+  <h1>How Rich are US Billionaires?</h1>
+
 
   <!-- Information Section -->
   <div class="info-section">
@@ -57,34 +59,66 @@
       <div class="slider-section">
         <div class="slider-item">
           <div class="slider-label">
-            <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Apple">
+            <i class="fas fa-solid fa-bowl-food"></i>
             <span>Feed a person for a year</span>
           </div>
-          <input type="range" class="item-slider" id="apple-slider" min="0" max="11906428571428" step="1" value="0" data-price="0.0000000042">
+          <input type="range" class="item-slider" id="apple-slider" min="0" max="11906428571428" step="1" value="0" data-price="4200">
           <div class="slider-info">
             <span>Selected: <span class="quantity-display">0</span></span>
           </div>
         </div>
         <div class="slider-item">
           <div class="slider-label">
-            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Bread">
-            <span>Bread - $2.00 each</span>
+            <i class="fa-solid fa-pills"></i>
+            <span>Pay a person's medical bills for a year</span>
           </div>
-          <input type="range" class="item-slider" id="bread-slider" min="0" max="25003" step="1" value="0" data-price="2.0">
+          <input type="range" class="item-slider" id="bread-slider" min="0" max="25003" step="1" value="0" data-price="13500">
           <div class="slider-info">
             <span>Selected: <span class="quantity-display">0</span></span>
           </div>
         </div>
         <div class="slider-item">
           <div class="slider-label">
-            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Milk">
-            <span>Milk - $3.00 each</span>
+            <i class="fa-solid fa-house"></i>
+            <span>House a homeless person for a year</span>
           </div>
-          <input type="range" class="item-slider" id="milk-slider" min="0" max="16669" step="1" value="0" data-price="3.0">
+          <input type="range" class="item-slider" id="milk-slider" min="0" max="16669" step="1" value="0" data-price="35600">
           <div class="slider-info">
             <span>Selected: <span class="quantity-display">0</span></span>
           </div>
         </div>
+        <div class="slider-item">
+          <div class="slider-label">
+            <i class="fa-solid fa-baby"></i>
+            <span>Provide a child with daycare for a year</span>
+          </div>
+          <input type="range" class="item-slider" id="milk-slider" min="0" max="16669" step="1" value="0" data-price="11000">
+          <div class="slider-info">
+            <span>Selected: <span class="quantity-display">0</span></span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-label">
+            <i class="fa-solid fa-person-cane"></i>
+            <span>Cover a person's Social Security payments for a year</span>
+          </div>
+          <input type="range" class="item-slider" id="milk-slider" min="0" max="16669" step="1" value="0" data-price="22100">
+          <div class="slider-info">
+            <span>Selected: <span class="quantity-display">0</span></span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-label">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Pay off a person's college debts</span>
+          </div>
+          <input type="range" class="item-slider" id="milk-slider" min="0" max="16669" step="1" value="0" data-price="37800">
+          <div class="slider-info">
+            <span>Selected: <span class="quantity-display">0</span></span>
+          </div>
+        </div>
+
+
       </div>
       <p class="balance-info">And have <strong id="balance">$50,007.00</strong> left</p>
       <p class="money-per-person">(<strong id="per-person">$10,001.40</strong>) each</p> 
