@@ -124,6 +124,7 @@ h1 {
   gap: 20px;
   font-size: 18px;
   font-weight: 600;
+  padding-bottom: 20px;
   color: #f1f1f1;
 }
 
@@ -132,6 +133,19 @@ h1 {
   height: 50px;
   border-radius: 50%;
   border: 2px solid #ff3e3e;
+}
+
+.slider-label i {
+  font-size: 32px; /* Adjust size as needed */
+  color: #ff3e3e; /* Match your theme color */
+  background: #1a1a2e;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider-info {
+  padding-top: 10px;
 }
 
 input[type="range"] {
@@ -157,6 +171,7 @@ input[type="range"]::-webkit-slider-thumb {
 .balance-info {
   text-align: center;
   font-size: 20px;
+  padding-top: 20px;
   color: #e0e0e0;
 }
 
@@ -184,7 +199,7 @@ input[type="range"]::-webkit-slider-thumb {
   .content {
     padding: 10px;
   }
-  
+
   #pieChart, #lineGraph, #barGraph {
     width: 100% !important;
     height: 275px !important;
